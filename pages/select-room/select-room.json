@@ -1,0 +1,13 @@
+{
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#fff",
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "van-submit-bar": "../../libs/vant/submit-bar/index",
+    "van-checkbox": "../../libs/vant/checkbox/index",
+    "van-checkbox-group": "../../libs/vant/checkbox-group/index",
+    "van-cell": "../../libs/vant/cell/index",
+    "van-cell-group": "../../libs/vant/cell-group/index",
+    "van-panel": "../../libs/vant/panel/index"
+  }
+}

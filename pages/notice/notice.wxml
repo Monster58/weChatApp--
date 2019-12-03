@@ -1,0 +1,10 @@
+<view class="page"> 
+  <view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view wx:for="{{notices}}" wx:key="id" wx:for-item="n" class="cu-item {{menuArrow?'arrow':''}}">
+      <navigator class="content" hover-class="none" url="/pages/notice-detail/notice-detail?id={{n.noticeID}}&ownerID={{ownerID}}" open-type="redirect">
+        <text class="cuIcon-notice text-orange"></text>
+        <text class="text-grey">{{n.noticeNam}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

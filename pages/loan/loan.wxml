@@ -1,0 +1,89 @@
+<view class="page">
+  <form bindsubmit='loanApplication'>
+    <view class="my_hd">贷款人信息</view>
+    <view class='card'>
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">姓名</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="userNameChange" class="weui-input" placeholder="请输入姓名" />
+        </view>
+      </view>
+    </view>
+    <view class='card'>
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">手机号码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="phoneNumChange" class="weui-input" placeholder="请输入手机号码" />
+        </view>
+      </view>
+    </view>
+    <view class='card line'>
+      <view class="weui-cell__hd weui-cell__hd_in-select-after middle"> 
+        <view class="weui-label">证件类型</view>
+      </view>
+      <view class="list weui-cell__bd">
+        <picker bindchange="bindCardTypesChange" value="{{cardtypeIndex}}" range="{{cardtypes}}">
+          <view class="weui-select weui-select_in-select-after">{{cardtypes[cardtypeIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class='card'>
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">证件号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="idNumChange" class="weui-input" placeholder="请输入证件号" />
+        </view>
+      </view>
+    </view>
+    <view class="my_hd">申请信息</view>
+    <view class='card'>
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">申请金额</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="amountChange" class="weui-input" placeholder="请输入申请金额（元）" />
+        </view>
+      </view>
+    </view>
+    <view class='card'>
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">用途</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input bindinput="purposeChange" class="weui-input" placeholder="请输入用途" />
+        </view>
+      </view>
+    </view>
+    <view class='card line'>
+      <view class="weui-cell__hd weui-cell__hd_in-select-after middle">
+        <view class="weui-label">时间</view>
+      </view>
+      <view class="list weui-cell__bd">
+        <picker bindchange="bindTimeChange" value="{{timeIndex}}" range="{{times}}">
+          <view class="weui-select weui-select_in-select-after">{{times[timeIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class='card line'>
+      <view class="weui-cell__hd weui-cell__hd_in-select-after middle">
+        <view class="weui-label">贷款形式</view>
+      </view>
+      <view class="list weui-cell__bd">
+        <picker bindchange="bindLoanModeChange" value="{{loanModeIndex}}" range="{{loanModes}}">
+          <view class="weui-select weui-select_in-select-after">{{loanModes[loanModeIndex]}}</view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-btn-area">
+      <button class="weui-btn" formType="submit" type="primary">确定</button>
+    </view>
+  </form>
+</view>

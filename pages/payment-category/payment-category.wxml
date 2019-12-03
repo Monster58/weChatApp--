@@ -1,0 +1,112 @@
+<!--pages/payment-category/payment-category.wxml-->
+<view class="page">
+  <view class="cu-bar bg-white solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-blue "></text> 请选择类目
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top">
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">物业费</text>
+      </view>
+      <view class="action button">
+        <navigator url="/pages/signing-item/signing-item?chargeTyp=0">
+          <view class="cu-btn round bg-blue">
+            选择签约物产
+          </view>
+        </navigator>
+        <navigator url="/pages/cancellation-item/cancellation-item?chargeTyp=0">
+          <view class="cu-btn round bg-blue">
+            选择解约物产
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">车位管理费</text>
+      </view>
+      <view class="action button">
+        <navigator url="/pages/signing-item/signing-item?chargeTyp=1">
+          <view class="cu-btn round bg-blue">
+            选择签约物产
+          </view>
+        </navigator>
+        <navigator url="/pages/cancellation-item/cancellation-item?chargeTyp=1">
+          <view class="cu-btn round bg-blue">
+            选择解约物产
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">水费</text>
+      </view>
+      <view class="action button">
+        <navigator url="/pages/signing-item/signing-item?chargeTyp=2">
+          <view class="cu-btn round bg-blue">
+            选择签约物产
+          </view>
+        </navigator>
+        <navigator url="/pages/cancellation-item/cancellation-item?chargeTyp=2">
+          <view class="cu-btn round bg-blue">
+            选择解约物产
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">电费</text>
+      </view>
+      <view class="action button">
+        <navigator url="/pages/signing-item/signing-item?chargeTyp=3">
+          <view class="cu-btn round bg-blue">
+            选择签约物产
+          </view>
+        </navigator>
+        <navigator url="/pages/cancellation-item/cancellation-item?chargeTyp=3">
+          <view class="cu-btn round bg-blue">
+            选择解约物产
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">燃气费</text>
+      </view>
+      <view class="action button">
+        <navigator url="/pages/signing-item/signing-item?chargeTyp=4">
+          <view class="cu-btn round bg-blue">
+            选择签约物产
+          </view>
+        </navigator>
+        <navigator url="/pages/cancellation-item/cancellation-item?chargeTyp=4">
+          <view class="cu-btn round bg-blue">
+            选择解约物产
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-black">暖气费</text>
+      </view>
+      <view class="action button">
+        <navigator url="/pages/signing-item/signing-item?chargeTyp=5">
+          <view class="cu-btn round bg-blue">
+            选择签约物产
+          </view>
+        </navigator>
+        <navigator url="/pages/cancellation-item/cancellation-item?chargeTyp=5">
+          <view class="cu-btn round bg-blue">
+            选择解约物产
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

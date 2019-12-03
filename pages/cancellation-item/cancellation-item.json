@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-checkbox": "../../libs/vant/checkbox/index",
+    "van-checkbox-group": "../../libs/vant/checkbox-group/index",
+    "van-cell": "../../libs/vant/cell/index",
+    "van-cell-group": "../../libs/vant/cell-group/index",
+    "van-button": "../../libs/vant/button/index",
+    "van-notify": "../../libs/vant/notify/index"
+  }
+}

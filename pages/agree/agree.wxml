@@ -1,0 +1,6 @@
+<!--pages/agree/agree.wxml-->
+<!-- <web-view src="{{host}}/agree.html"></web-view> -->
+<!-- class='imageV' -->
+<view >
+<image src='../images/index.jpg' style='width:100%;height:80em;'></image>
+</view>

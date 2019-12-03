@@ -1,0 +1,28 @@
+/* pages/notice-detail/notice-detail.wxss */
+@import "/libs/weui.wxss";
+#title{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+font-weight:600;
+}
+.ccwebView{
+width: 90%;
+margin-left: 5%;  
+} 
+.flx {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 20px;
+  margin: 20rpx auto;
+  text-align: left !important;
+}
+page {
+  background-color: #fff;
+}
+.name {
+  color: #61A5FF;
+}

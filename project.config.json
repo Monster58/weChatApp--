@@ -1,0 +1,240 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "wxc7ac12f1f645c248",
+	"projectname": "ydzf",
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "二维码",
+					"pathName": "pages/index/index",
+					"query": "scene=-5",
+					"scene": "1001"
+				},
+				{
+					"id": 1,
+					"name": "二维码",
+					"pathName": "pages/index/index",
+					"query": "scene=1-2-102,4",
+					"scene": "1001"
+				},
+				{
+					"id": -1,
+					"name": "公告",
+					"pathName": "pages/notice/notice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "贷款申请",
+					"pathName": "pages/loan/loan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "缴费",
+					"pathName": "pages/select-room/select-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "缴费记录",
+					"pathName": "pages/pay-history/pay-history",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定",
+					"pathName": "pages/bind-room/bind-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "解绑",
+					"pathName": "pages/unbind-room/unbind-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报修",
+					"pathName": "pages/new-repair/new-repair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报修记录",
+					"pathName": "pages/repair-history/repair-history",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报修",
+					"pathName": "pages/new-repair/new-repair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的物产",
+					"pathName": "pages/bind-room/bind-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定银行卡",
+					"pathName": "pages/signing/signing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单详情",
+					"pathName": "pages/pay-history-item/pay-history-item",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "login",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "公告详情",
+					"pathName": "pages/notice-detail/notice-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "贷款申请",
+					"pathName": "pages/loan/loan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "公告列表",
+					"pathName": "pages/notice/notice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的物产",
+					"pathName": "pages/bind-room/bind-room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "签约",
+					"pathName": "pages/signing-type/signing-type",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择收费类目",
+					"pathName": "pages/payment-category/payment-category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定收费项目",
+					"pathName": "pages/signing-item/signing-item",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "生活缴费",
+					"pathName": "pages/payment-category/payment-category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "银行卡列表",
+					"pathName": "pages/card-list/card-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "解绑银行卡",
+					"pathName": "pages/ubind-card/ubind-card",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

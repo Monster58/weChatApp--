@@ -1,0 +1,17 @@
+<view class="noinfo" wx:if="{{noInfo}}">{{noInfo}}</view>
+<block wx:else>
+  <view class="page">
+    <view class="pay-list" wx:for="{{expenseList}}" wx:key="expenseID">
+      <navigator class="content" hover-class="none" url="/pages/pay-history-item/pay-history-item?id={{item.expenseID}}&name={{item.expenseNam}}" open-type="redirect">
+        <view class="top">
+          <view class="">
+            <text class="cuIcon-pay text-blue"></text>
+            <text class="text-grey">{{item.expenseNam}}</text>
+          </view>
+          <view class="date">{{item.expenseTim}}</view>
+        </view>
+        <view class="num">{{item.expenseAmount}}元</view>
+      </navigator>
+    </view>
+  </view>
+</block>

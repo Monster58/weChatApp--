@@ -1,0 +1,41 @@
+<view class="info" wx:if="{{noInfo}}">{{noInfo}}</view>
+<block wx:else>
+  <view class="page">
+    <view class="room_item" wx:for="{{propertyList}}" wx:key="propertyID" wx:for-item="r">
+      <view class="cu-bar bg-white">
+        <view class="action ">
+          <view>
+            <text class="cuIcon-title text-blue"></text>
+            <text class="roomitem">{{r.communityNam}} {{r.propertyNO}}</text>
+          </view>
+          <view>合计：{{r.allAmount}}元</view>
+        </view>
+      </view>
+      <van-checkbox-group value="{{ result }}" custom-class="mycheckbox" bind:change="onChange">
+        <van-cell-group>
+          <view class="myPanel" wx:for="{{ r.chargeTypList }}" wx:key="index" wx:for-item="ls">
+            <view class="itemheader">
+              <view class="title typeName">{{ls.chargeTypNam}}</view>
+              <van-checkbox catch:tap="noop" class="checkboxes-{{ index }}" name="{{ls.amountID}}" />
+            </view>
+            <view class="itembody">
+              <view class="itemdetails">金额：{{ls.amount}}元</view>
+              <view class="itemdetails">正常收费：{{ls.chargeTypAmount}}元， 滞纳金：{{ls.overdueAmount}}元</view>
+              <view class="itemdetails">收费周期：{{ls.chargeMonth}}</view>
+            </view>
+          </view>
+        </van-cell-group>
+      </van-checkbox-group>
+    </view>
+    <!-- <van-submit-bar button-class="submit" price="{{ singing }}" button-text="缴费" bind:submit="onSubmit" /> -->
+    <view class="fix-bottom">
+      <view class="my-submit">
+        <view class="price-text">
+          <view class="text">合计：</view>
+          <view class="all-price">￥{{singing}}</view>
+        </view>
+        <view bindtap="onSubmit" class="my-button">缴费</view>
+      </view>
+    </view>
+  </view>
+</block>

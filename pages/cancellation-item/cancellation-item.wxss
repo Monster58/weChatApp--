@@ -1,0 +1,13 @@
+/* pages/cancellation-item/cancellation-item.wxss */
+.value-class {
+  flex: none !important;
+}
+.button {
+  width: 96%;
+  margin: 30rpx auto;
+} 
+.cell {
+  width: 96% !important;
+  margin: 20rpx auto 0;
+  border-radius: 10px;
+}

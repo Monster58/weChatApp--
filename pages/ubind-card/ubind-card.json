@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-notice-bar": "../../libs/vant/notice-bar/index",
+    "van-checkbox": "../../libs/vant/checkbox/index",
+    "van-checkbox-group": "../../libs/vant/checkbox-group/index",
+    "van-toast": "../../libs/vant/toast/index",
+    "van-notify": "../../libs/vant/notify/index"
+  }
+}

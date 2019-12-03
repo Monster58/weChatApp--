@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-notify": "../../libs/vant/notify/index",
+    "van-uploader": "../../libs/vant/uploader/index",
+    "van-picker": "../../libs/vant/picker/index"
+  }
+}

@@ -1,0 +1,18 @@
+<view class="page">
+  <van-checkbox-group value="{{ result }}" bind:change="onChange"> 
+    <van-cell-group>
+      <van-cell wx:for="{{ propertyList }}" wx:key="index" title="{{ item.communityNam }}{{ item.propertyNO }}" value-class="value-class" clickable data-index="{{ index }}" bind:click="toggle">
+        <van-checkbox catch:tap="noop" class="checkboxes-{{ index }}" name="{{ item.propertyID }}" />
+      </van-cell>
+    </van-cell-group>
+  </van-checkbox-group>
+  <view class="button">
+    <block wx:if="{{propertyListLength}}">
+      <van-button bind:click="submit" color="#61A5FF" type="primary" size="large">确认关闭自动缴费</van-button>
+    </block>
+    <block wx:else>
+      <view>暂无解约物产</view>
+    </block>
+  </view>
+</view>
+<van-notify id="van-notify" />

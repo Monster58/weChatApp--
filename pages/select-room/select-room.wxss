@@ -1,0 +1,177 @@
+/* pages/select-room/select-room.wxss */ 
+@import "/libs/weui.wxss";
+.page {
+  background-color: rgb(240, 240, 240);
+  min-height: 100vh;
+  padding-top: 14rpx;
+  padding-bottom: 160rpx;
+}
+.weui-panel {
+  background-color: unset;
+}
+.weui-panel__hd {
+  padding: 20rpx 15rpx;
+}
+.weui-cells {
+  background-color: unset;
+  position: unset;
+}
+.weui-panel__hd {
+  position: unset;
+}
+.weui-panel {
+  position: unset;
+}
+.weui-media-box {
+  position: unset;
+}
+.card {
+  background-color: #fff;
+  width: 96% !important;
+  margin: 14rpx auto;
+  padding: 10rpx 30rpx;
+  border-radius: 10rpx;
+}
+
+.card .title {
+  font-size: 18px;
+}
+
+.card .list {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+}
+
+
+.card.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card.line .list {
+  width: 70%;
+}
+
+.card.line .title {
+  line-height: 2.58823529em;
+  width: 30%;
+}
+
+.card .textarea_content textarea {
+  font-size: 16px;
+  padding: 10rpx;
+  padding-left: 0;
+}
+
+.card .textarea_content image {
+  width: 176rpx;
+  height: 176rpx;
+}
+
+
+.middle {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.room_item {
+  margin-top: 40rpx;
+}
+.weui-form-preview {
+  position: unset;
+}
+.submit {
+  background-color: #61A5FF !important;
+  border-color: #61A5FF !important;
+}
+.action {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 100%;
+}
+.value-class {
+  flex: none !important;
+}
+.itemdetails {
+  width: 100%;
+  /* border-top: 1px solid #ccc; */
+  padding-top: 10rpx;
+}
+.van-cell {
+  display: block !important;
+}
+.myPanel {
+  background-color: #fff;
+  padding: 10rpx 5%;
+}
+.myPanel .itemheader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(245, 245, 245);
+  font-size: 15px;
+  padding: 20rpx 0;
+}
+.itembody {
+  font-size: 14px;
+  /* text-align: right; */
+  padding-left: 20rpx;
+}
+.itemdetails {
+  /* text-align: right; */
+  font-size: 13px;
+  color: rgb(153, 153, 153);
+}
+.roomitem {
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+}
+.typeName {
+  color: rgb(65, 65, 65);
+  font-size: 14px;
+  padding-left: 20rpx;
+}
+.room_item {
+  width: 96%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fix-bottom {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.my-submit {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 110rpx;
+  background-color: #fff;
+}
+.price-text {
+  display: flex;
+}
+.my-button {
+  width: 35%;
+  text-align: center;
+  background-color: #61A5FF;
+  font-size: 16px;
+  /* font-weight: 600; */
+  color: #fff;
+}
+.all-price {
+  font-size: 17px;
+  color: rgb(233, 0, 0);
+  margin-right: 20rpx;
+}
+.text {
+  font-size: 15px;
+}
+.info {
+  margin-top: 10rpx;
+  padding-left: 4%;
+}

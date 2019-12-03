@@ -1,0 +1,18 @@
+<view class="page">
+  <view wx:for="{{repairList}}" wx:key class="repair_history_item_content">
+    <block wx:if="{{item.repairSta==1}}">
+      <van-card desc="{{item.repairDes}}" title="{{item.repairNam}}" thumb="{{bannerRootPath}}{{item.photo1}}" custom-class="repair_history_item solved" thumb-class="repair_img" title-class="repair_title" desc-class="repair_desc">
+        <view class="state_true" slot="footer">
+          <view>已解决</view>
+        </view>
+      </van-card>
+    </block>
+    <block wx:else>
+      <van-card desc="{{item.repairDes}}" title="{{item.repairNam}}" thumb="{{bannerRootPath}}{{item.photo1}}" custom-class="repair_history_item" thumb-class="repair_img" title-class="repair_title" desc-class="repair_desc">
+        <view class="state_false" slot="footer">
+          <view>未解决</view>
+        </view>
+      </van-card>
+    </block>
+  </view>
+</view>

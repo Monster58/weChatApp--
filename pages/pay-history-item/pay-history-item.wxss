@@ -1,0 +1,23 @@
+/* pages/pay-history-item/pay-history-item.wxss */
+.solid-bottom::after {
+  border:none !important;
+} 
+.header {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.cu-list {
+  margin-top: 0 !important;
+  border-bottom: 1px solid rgb(247, 247, 247);
+}
+.block {
+  margin-bottom: 20rpx;
+}
+.min-block {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}

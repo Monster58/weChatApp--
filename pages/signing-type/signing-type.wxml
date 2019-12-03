@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="userinfo">
+    <view class="portrait">
+      <block>
+        <open-data type="userAvatarUrl"></open-data>
+      </block>
+    </view>
+    <view class="user-name">{{userInfo.ownerNam}}</view>
+  </view>
+  <navigator url="/pages/card-list/card-list">
+    <view class="item">
+      <van-icon size="16" color="#61A5FF" name="card" />
+      <view class="item-name">银行卡</view>
+    </view>
+  </navigator>
+  <navigator url="/pages/payment-category/payment-category">
+    <view class="item">
+      <van-icon size="16" color="#61A5FF" name="gold-coin" />
+      <view class="item-name">生活缴费</view>
+    </view>
+  </navigator>
+</view>

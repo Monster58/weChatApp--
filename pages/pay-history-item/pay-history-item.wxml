@@ -1,0 +1,81 @@
+<view class="header padding-xs flex align-center">
+  <view class="flex-sub text-center">
+    <view class="solid-bottom text-sl padding">
+      <text class=" cuIcon-roundcheckfill text-green"></text>
+      <text>￥{{propertyList[0].allAmount}}</text>
+    </view>
+    <text class="text-grey">交易成功</text>
+  </view>
+</view>
+<!-- //订单号 -->
+<view class="block">
+  <view class="cu-list menu">
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">订单号</text>
+        <text class="">{{expenseID}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!--  -->
+<view class="block" wx:for="{{propertyList}}" wx:key="propertyID" wx:for-item="p">
+  <view class="cu-list menu">
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">社区名称</text>
+        <text class="">{{p.communityNam}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="cu-list menu">
+    <view class="cu-item">
+      <view class="content">
+        <text class="text-grey">物产编号</text>
+        <text class="">{{p.propertyNO}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="min-block" wx:for="{{p.chargeTypList}}" wx:key="chargeTypID" wx:for-item="c">
+    <view class="cu-list menu">
+      <view class="cu-item">
+        <view class="content">
+          <text class="text-grey">收费类目</text>
+          <text class="">{{c.chargeTypNam}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list menu">
+      <view class="cu-item">
+        <view class="content">
+          <text class="text-grey">收费金额</text>
+          <text class="">{{c.amount}}元</text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list menu">
+      <view class="cu-item">
+        <view class="content">
+          <text class="text-grey">正常收费</text>
+          <text class="">{{c.chargeTypAmount}}元</text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list menu">
+      <view class="cu-item">
+        <view class="content">
+          <text class="text-grey">滞纳金</text>
+          <text class="">{{c.overdueAmount}}元</text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list menu">
+      <view class="cu-item">
+        <view class="content">
+          <text class="text-grey">缴费周期</text>
+          <text class="">{{c.chargeMonth}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

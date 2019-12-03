@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="card_list">
+    <view wx:for="{{cardList}}" wx:key="id" wx:for-index="i" wx:for-item="n" class="card_item">
+      <image src="../images/cardbg.png"></image>
+      <view class="card-number">卡号：{{n.accNO}}</view>
+      <van-button bind:click="handleUbindCard" custom-class="jiebang" plain hairline round type="info" loading-class="loading" loading-type="spinner" loading-text="解绑中..." data-info='{{cardList[i]}}'>解绑</van-button>
+    </view>
+  </view>
+
+  <!-- <block wx:if="{{!cardlist}}">
+    <view class="button">
+      <van-button bind:click="addCard" icon="plus" type="default" size="large">绑定平台银行卡</van-button>
+    </view>
+  </block> -->
+
+  <van-dialog id="van-dialog" />
+
+</view>

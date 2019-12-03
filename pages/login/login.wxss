@@ -1,0 +1,117 @@
+@import "/libs/weui.wxss";
+
+/**index.wxss**/ 
+
+.page {
+  background-color: rgb(240, 240, 240);
+  /* height: 100vh; */
+  padding-top: 14rpx;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.weui-select {
+  border-right: none;
+}
+.button {
+  padding: 10rpx 4%;
+  /* padding-bottom: 70rpx; */
+}
+
+.card {
+  background-color: #fff;
+  width: 96% !important;
+  margin: 14rpx auto;
+  padding: 10rpx 30rpx;
+  border-radius: 10rpx;
+}
+
+.card .title {
+  font-size: 18px;
+}
+
+.card .list {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+}
+
+.weui-select {
+  border-right: none;
+}
+
+.card.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card.line .list {
+  width: 70%;
+}
+
+.card.line .title {
+  line-height: 2.58823529em;
+  width: 30%;
+}
+
+.card .textarea_content textarea {
+  font-size: 16px;
+  padding: 10rpx;
+  padding-left: 0;
+}
+
+.card .textarea_content image {
+  width: 176rpx;
+  height: 176rpx;
+}
+
+.weui-cell {
+  padding: 0;
+}
+
+.middle {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+open-data {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.weui-label {
+  font-size: 16px;
+}
+.weui-cell__bd {
+  font-size: 16px;
+}
+.yanzhengma {
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 10rpx;
+}
+#van-toast {
+  font-size: 14px;
+}

@@ -1,0 +1,69 @@
+@import "/libs/weui.wxss";
+
+.page {
+  min-height: 100vh;
+  /* padding-top: 20rpx; */
+  background-color: rgb(245, 245, 245);
+  padding-top: 10rpx;
+}
+.text-green {
+  color: #61a5ff;
+}
+
+.van-sticky {
+  padding-bottom: 30rpx;
+}
+
+.history_item {
+  margin-top: 15rpx;
+}
+
+.text-grey {
+  color: #333;
+  font-size: 15px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.num {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.cu-item {
+  width: 96%;
+  margin: 10rpx auto;
+  border-radius: 10px;
+}
+
+.cuIcon-pay {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 10rpx;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 50rpx;
+  margin-right: 10rpx;
+  font-size: 14px;
+  background-color: #61a5ff;
+}
+.date {
+  color: rgb(145, 145, 145);
+  font-size: 14px;
+}
+.cu-list+.cu-list {
+  margin-top: 0rpx;
+}
+
+.pay-list {
+  width: 96%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+  padding: 20rpx 30rpx;
+}

@@ -1,0 +1,74 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+  <view class="my_hd">报修内容</view>
+  <form bindsubmit='newRepair'>
+    <view class="page__bd">
+      <view class='card'>
+        <view class='title'>相关房屋</view>
+        <view class="list weui-cell__bd">
+          <picker range="{{myRooms}}" value="{{myRooms[villageIndex][propertyNO]}}" data-selecthx="{{myRooms[villageIndex].propertyID}}" range-key="{{'propertyNam'}}" bindchange="bindPickerChange_hx">
+            <view class="weui-select weui-select_in-select-after">{{myRooms[villageIndex].propertyNam}}</view>
+          </picker>
+        </view>
+      </view>
+      <input hidden='true' name="id" value="{{id}}" placeholder="" />
+      <view class='card line'>
+        <view class='title'>标题</view>
+        <view class="list weui-cell__bd">
+          <input class="weui-input" name="title" value="{{input_hold}}" placeholder="请输入标题" />
+        </view>
+      </view>
+      <view class='card line'>
+        <view class='title'>联系姓名</view>
+        <view class="list weui-cell__bd">
+          <input class="weui-input" name="name" value="{{input_hold}}" placeholder="请输入姓名" />
+        </view>
+      </view>
+      <view class='card line'>
+        <view class='title'>联系电话</view>
+        <view class="list weui-cell__bd">
+          <input class="weui-input" name="phone" value="{{input_hold}}" placeholder='请输入电话' />
+        </view>
+      </view>
+      <view class='card line'>
+        <view class='title'>紧急程度</view>
+        <view class="list weui-cell__bd">
+          <picker bindchange="bindUrgentLevelChange" value="{{urgentLevelIndex}}" range="{{urgentLevel}}">
+            <view class="weui-select weui-select_in-select-after">{{urgentLevel[urgentLevelIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class='card'>
+        <view class='title'>详细描述</view>
+        <view class="textarea_content">
+          <textarea class="weui-textarea" name="content" value="{{input_hold}}" style="height: 6em" placeholder='请补充详细信息以便快速处理（200字内）' />
+          <!-- <view class="weui-textarea-counter">0/200</view> -->
+          <!-- 上传图片 -->
+          <view class="weui-cell__bd imgList">
+            <!-- <view wx:if="{{img_arr >= 3}}"> -->
+            <block wx:for="{{img_arr}}" wx:key>
+              <view class="img_item">
+                <image src='{{item}}'></image>
+              </view>
+            </block>
+            <!-- </view> -->
+            <!-- <view wx:else> -->
+            <view wx:if="{{img_arr.length < 3}}">
+              <image bindtap="upimg" src='../images/addpic.png'></image>
+            </view>
+            <!-- </view> -->
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" formType="submit" type="primary">确定</button>
+      </view>
+    </view>
+  </form>
+  <view class="weui-footer margin_top">
+    <view class="weui-footer__links">
+      <navigator url="/pages/repair-history/repair-history" class="weui-footer__link">查看报修记录</navigator>
+    </view>
+  </view>
+</view>
+<!-- 提示信息 -->
+<van-notify id="van-notify" />

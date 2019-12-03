@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname"></text>
+    </block>
+  </view>
+  
+<text>\n</text>
+<form bindsubmit='bindRoom'>
+  <view class="page" >
+ 
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{errMsg}}</view>  
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">标题</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  type='text' name="b" placeholder="请输入联系方式" value='{{b}}'/>
+                </view>
+               
+            </view>
+
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">联系方式</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  type='text' name="b" placeholder="请输入联系方式" value='{{b}}'/>
+                </view>
+               
+            </view>
+            
+             <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">保修内容</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  type='text' name="u" placeholder="请输入保修内容" value='{{u}}' />
+                </view>
+               
+            </view>
+
+        </view>
+       
+
+        <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="../../pages/agree/agree" class="weui-agree__link">《小区云服务平台服务协议》</navigator>
+                </view>
+            </label>
+        </checkbox-group>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" formType="submit" type="primary" >提交保修</button>
+        </view>
+    </view>
+</view>
+  </form>
+
+
+</view>

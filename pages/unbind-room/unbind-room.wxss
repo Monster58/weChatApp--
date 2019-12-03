@@ -1,0 +1,105 @@
+/* pages/unbind-room/unbind-room.wxss */
+@import "/libs/weui.wxss";
+.page {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  padding-top: 14rpx;
+  
+}
+.weui-panel {
+  background-color: unset;
+}
+.weui-panel__hd {
+  padding: 20rpx 15rpx;
+}
+.weui-cells {
+  background-color: unset;
+  position: unset;
+}
+.weui-panel__hd {
+  position: unset;
+}
+.weui-panel {
+  position: unset;
+}
+.weui-media-box {
+  position: unset;
+}
+.card {
+  background-color: #fff;
+  width: 96% !important;
+  margin: 14rpx auto;
+  padding: 26rpx 30rpx;
+  border-radius: 10rpx;
+}
+
+.card .title {
+  font-size: 18px;
+}
+
+.card .list {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+}
+
+
+.card.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card.line .list {
+  width: 70%;
+}
+
+.card.line .title {
+  line-height: 2.58823529em;
+  width: 30%;
+}
+
+.card .textarea_content textarea {
+  font-size: 16px;
+  padding: 10rpx;
+  padding-left: 0;
+}
+
+.card .textarea_content image {
+  width: 176rpx;
+  height: 176rpx;
+}
+
+.weui-cell {
+  position: unset;
+  padding: 0;
+}
+weui-check .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #61A5FF !important;
+  border: 1px solid #61A5FF !important;
+}
+/* .weui-label {
+  font-size: 16px;
+}
+.weui-cell__bd {
+  font-size: 16px;
+} */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #61a5ff !important;
+  border: 1px solid #61a5ff !important;
+}
+checkbox {
+transform: scale(.8);
+margin-right: 16rpx;
+}
+.cu-form-group {
+  width: 96%;
+  border-radius: 10px;
+  margin: 10rpx auto;
+}
+.cu-form-group .title {
+  min-width: calc(4em + 30rpx);
+}
+.button {
+  padding: 10rpx 4%;
+  /* padding-bottom: 70rpx; */
+}

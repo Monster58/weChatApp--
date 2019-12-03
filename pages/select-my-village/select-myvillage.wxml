@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="userinfo">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+
+  <text>\n</text>
+  <form bindsubmit='selectOneVillage'>
+    <view class="page">
+      <view class="page__bd">
+        <view class='card line'>
+          <view class="weui-cell__hd weui-cell__hd_in-select-after middle">
+            <view class="weui-label">我的房屋</view>
+          </view>
+          <view class="list weui-cell__bd">
+            <picker bindchange="bindPickerChange_hx" value="{{myRooms[villageIndex].id}}" range="{{myRooms}}" data-selecthx="{{myRooms[villageIndex].roomCode}}" range-key="{{'roomCode'}}">
+              <view class="weui-select weui-select_in-select-after">{{myRooms[villageIndex].villageName}}-{{myRooms[villageIndex].roomCode}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">{{errMsg}}</view>
+        <view class="weui-btn-area" style='margin-top:50rpx;'>
+          <button class="weui-btn" formType="submit" type="primary">确定</button>
+        </view>
+      </view>
+    </view>
+  </form>
+
+  <view class="weui-footer margin_top">
+    <view class="weui-footer__links">
+      <navigator url="/pages/bind-room/bind-room" class="weui-footer__link">绑定新的房屋</navigator>
+    </view>
+  </view>
+</view>

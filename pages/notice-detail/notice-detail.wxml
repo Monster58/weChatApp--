@@ -1,0 +1,12 @@
+<import src="../wxParse/wxParse.wxml" />
+<view class='ccwebView'>
+  <!--这里data中article为bindName-->
+  <view>
+    <text class='title' space="emsp" id='title'>{{ msg }}</text>
+  </view>
+  <view class='' space="emsp">
+    <text class='name'>{{ name }}    </text><text>    {{ date }}</text>
+  </view>
+  <text>\n</text>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>

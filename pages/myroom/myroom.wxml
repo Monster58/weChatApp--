@@ -1,0 +1,15 @@
+<!--pages/myroom/myroom.wxml-->
+<text>{{mobile}}</text>
+<view class="container">
+  <view>
+     <text class="user-motto">小区名：{{motto}}</text>
+     <text class="user-motto">房屋：{{motto}}</text>
+     <text class="user-motto">业主姓名：{{motto}}</text>
+     <text class="user-motto">身份证号：{{motto}}</text>
+     <text class="user-motto">手机号：{{motto}}</text>
+  </view>
+    <view class="btn-area">
+    <button formType="submit">确定</button>
+
+  </view>
+</view>

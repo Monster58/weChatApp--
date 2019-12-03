@@ -1,0 +1,23 @@
+<form bindsubmit='unBindUser'>
+  <view class="cu-form-group">
+    <view class="title">姓名</view>
+    <input disabled="true" value="{{userInfo.ownerNam}}" placeholder="姓名"></input>
+  </view>
+  <view class="cu-form-group">
+    <view class="title">手机号</view> 
+    <input disabled="true" value="{{userInfo.phoneNO}}" placeholder="手机号"></input>
+  </view>
+    <view class="cu-form-group">
+    <view class="title">身份证号</view>
+    <input disabled="true" value="{{userInfo.certNO}}" placeholder="手机号"></input> 
+  </view>
+  <view class="cu-form-group">
+    <view class="title">验证码</view>
+    <input bindinput="msgCodeChange" value="{{msgCode}}" placeholder="请输入验证码"></input>
+    <button bindtap="getPhoneCode" class="cu-btn bg-blue shadow">验证码</button> 
+  </view>
+  <view class='button'>
+    <button class="weui-btn" formType="submit" type="primary">解除绑定</button>
+  </view>
+</form>
+<van-notify id="van-notify" />

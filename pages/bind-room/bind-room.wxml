@@ -1,0 +1,24 @@
+<van-tabs animated swipeable lazy-render color="#61A5FF" active="{{ active }}" bind:click="changeTab" bind:change="">
+  <van-tab wx:for="{{communityList}}" wx:key="item.propertyID" title="{{item.communityNam}}">
+    <view wx:for="{{propertyList}}" wx:key="propertyID" wx:for-item="i" class="room_item">
+      <view class='card line'>
+        <view class="weui-cell__bd">
+          <view class="left">物产编号</view>
+          <view class="left">{{i.propertyNO}}</view>
+        </view>
+      </view>
+      <view class='card line'>
+        <view class="weui-cell__bd">
+          <view class="left">物产类型</view>
+          <view class="left">{{roomType[i.propertyTyp]}}</view>
+        </view>
+      </view>
+      <view class='card line'>
+        <view class="weui-cell__bd">
+          <view class="left">物产名称</view>
+          <view class="left">{{i.propertyNam}}</view>
+        </view>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>

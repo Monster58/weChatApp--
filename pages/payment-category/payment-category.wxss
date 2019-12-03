@@ -1,0 +1,14 @@
+/* pages/payment-category/payment-category.wxss */
+.cu-list.card-menu {
+  margin: 20rpx 2% 0 !important;
+}
+.bg-blue {
+  background-color: #61A5FF;
+  box-shadow: transparent !important;
+}
+.button {
+  display: flex;
+}
+.cu-btn {
+  margin-left: 10rpx;
+}

@@ -1,0 +1,97 @@
+@import "/libs/weui.wxss";
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.weui-cell_select {
+  border-left: 1px solid rgb(231, 231, 231);
+}
+.margin_top {
+  margin-top: 10rpx;
+}
+.card {
+  background-color: #fff;
+  width: 100% !important;
+  margin: 14rpx auto;
+  padding: 10rpx 30rpx;
+  border-radius: 10rpx;
+}
+
+.card .title {
+  font-size: 18px;
+}
+
+.card .list {
+  font-size: 16px;
+  color: rgb(66, 66, 66);
+}
+
+.weui-select {
+  border-right: none;
+}
+
+.card.line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card.line .list {
+  width: 70%;
+}
+
+.card.line .title {
+  line-height: 2.58823529em;
+  width: 30%;
+}
+
+.card .textarea_content textarea {
+  font-size: 16px;
+  padding: 10rpx;
+  padding-left: 0;
+}
+
+.card .textarea_content image {
+  width: 176rpx;
+  height: 176rpx;
+}
+
+.weui-cell {
+  padding: 0;
+}
+
+.middle {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.userinfo {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.weui-label {
+  font-size: 18px;
+}
+.weui-cell__bd {
+  font-size: 17px;
+}

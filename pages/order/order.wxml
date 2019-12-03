@@ -1,0 +1,57 @@
+<view class="page"> 
+  <view class="page__bd">
+    <checkbox-group bindchange="checkboxChange">
+      <view wx:for="{{myCR}}" wx:key="id" wx:for-item="cr">
+        <view class='card'>
+          <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label checkbox item_title">
+                  <checkbox value="{{cr.id}}" checked="{{cr.checked}}" /> 待缴金额
+                </view>
+                <view class="weui-form-preview__value_in-hd">¥{{cr.realCeceivables}}</view>
+              </view>
+            </view>
+            <view class="weui-form-preview__bd">
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">收费科目</view>
+                <view class="weui-form-preview__value">{{cr.feeName}}</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">物产</view>
+                <view class="weui-form-preview__value">{{cr.estateCode}}</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">业主</view>
+                <view class="weui-form-preview__value">{{cr.owner}}</view>
+              </view>
+              <view class="weui-form-preview__item">
+                <view class="weui-form-preview__label">时间段</view>
+                <view class="weui-form-preview__value">{{cr.chargeYear}}年{{cr.chargeMonth}}月</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </checkbox-group>
+    <view class='weui-btn-area' wx:if="{{myCR != ''}}">
+      <button class="weui-btn" type="primary" bindtap="pay">确认并缴费</button>
+    </view>
+    <view wx:else>
+      <view class="page__bd">
+        <view>
+          <view class="weui-form-preview">
+            <view class="weui-form-preview__hd">
+              <view class="weui-form-preview__item">
+                <view class="">{{tis}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='weui-btn-area'>
+        <button class="weui-btn" type="primary" bindtap="backHome">回到首页</button>
+      </view>
+    </view>
+  </view>
+</view>

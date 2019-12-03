@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/order/order",
+    "pages/resident/resident",
+    "pages/logs/logs",
+    "pages/pay-history/pay-history",
+    "pages/select-my-village/select-myvillage",
+    "pages/agree/agree",
+    "pages/pay-result/pay-result",
+    "pages/mp-view/mp-view",
+    "pages/bind-room/bind-room",
+    "pages/select-room/select-room",
+    "pages/notice-detail/notice-detail",
+    "pages/new-repair/new-repair",
+    "pages/ad-detail/ad-detail",
+    "pages/unbind-room/unbind-room",
+    "pages/loan/loan",
+    "pages/signing/signing",
+    "pages/repair-history/repair-history",
+    "pages/notice/notice",
+    "pages/card-list/card-list",
+    "pages/login/login",
+    "pages/pay-history-item/pay-history-item",
+    "pages/signing-type/signing-type",
+    "pages/payment-category/payment-category",
+    "pages/signing-item/signing-item",
+    "pages/cancellation-item/cancellation-item",
+    "pages/ubind-card/ubind-card"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#61A5FF",
+    "navigationBarTitleText": "智慧社区",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

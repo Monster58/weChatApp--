@@ -1,0 +1,96 @@
+<view class="page">
+  <view class="page__bd">
+    <swiper class="card_swiper card-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+      <swiper-item wx:for="{{banner}}" wx:key class="{{cardCur==index?'cur':''}}">
+        <view bindtap="bannerUrl" class="swiper-item">
+          <image src="{{item.advertPng}}" mode="aspectFill"></image>
+        </view>
+      </swiper-item>
+    </swiper>
+    <!-- nav -->
+    <view class="weui-grids">
+      <navigator class="weui-grid" url="/pages/bind-room/bind-room">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/bang.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">我的物产</text>
+      </navigator>
+      <navigator class="weui-grid" url="/pages/unbind-room/unbind-room">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/jie.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">解绑</text>
+      </navigator>
+      <navigator class="weui-grid" url="/pages/signing-type/signing-type">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/qian.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">签约</text>
+      </navigator>
+      <navigator class="weui-grid" url="/pages/select-room/select-room">
+        <!-- <view bindtap="devToast" class="weui-grid"> -->
+        <view class="weui-grid__icon">
+          <image src="../images/icon/jiao.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">缴费</text>
+        <!-- </view> -->
+      </navigator>
+      <navigator class="weui-grid" url="/pages/pay-history/pay-history">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/ji.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">缴费记录</text>
+      </navigator>
+      <navigator class="weui-grid" url="/pages/notice/notice">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/gong.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">公告</text>
+      </navigator>
+      <navigator class="weui-grid" url="/pages/new-repair/new-repair">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/bao.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">报修</text>
+      </navigator>
+      <navigator class="weui-grid" url="/pages/loan/loan">
+        <view class="weui-grid__icon">
+          <image src="../images/icon/dai.png" alt="">
+          </image>
+        </view>
+        <text class="weui-grid__label">贷款申请</text>
+      </navigator>
+    </view>
+    <!-- 公告 -->
+    <view class="weui-panel">
+      <view class="weui-panel__hd">
+        <text class='cuIcon-titles text-orange '></text> 公告
+      </view>
+      <view class="page-section-spacing">
+        <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_small-appmsg">
+            <view class="weui-cells weui-cells_in-small-appmsg">
+              <view wx:for="{{notices}}" wx:key="id" wx:for-item="n" wx:for-index="i">
+                <navigator wx:if="{{i<3}}" url="/pages/notice-detail/notice-detail?id={{n.noticeID}}&ownerID={{ownerID}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                  <view class="weui-cell__bd weui-cell_primary">
+                    <view>{{n.noticeNam}}</view>
+                  </view>
+                  <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+</view>
+<van-toast id="van-toast" />
